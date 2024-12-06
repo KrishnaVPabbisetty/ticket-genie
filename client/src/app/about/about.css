@@ -1,0 +1,29 @@
+/* TeamSection.css */
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.heading {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* You can add more styles as per your design requirements */

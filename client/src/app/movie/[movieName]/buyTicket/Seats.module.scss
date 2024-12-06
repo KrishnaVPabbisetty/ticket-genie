@@ -1,0 +1,103 @@
+.seatsContainer {
+    text-align: center;
+}
+
+.seatsHolder {
+    margin: 10px;
+}
+
+.seatsLeafContainer {
+    margin-left: -30px;
+}
+
+.seats {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+ */
+    user-select: none;
+    cursor: pointer;
+    color: #545454;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 11px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 11%), 0 2px 4px 0 rgb(0 0 0 / 14%);
+    // border: 0.8px solid #52c41a; /* Green border for not booked seats */
+}
+
+.colName {
+    color: #545454;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.seatSelected0 {
+    color: red !important;
+}
+
+.seatBlocked {
+    cursor: default;
+    color: #f2f2f2 !important;
+    box-shadow: none;
+    border: none;
+}
+
+.seatBooked {
+    background: rgba(138, 138, 138, 0.418);
+    border: 0.8px solid #52c41a; /* Green border for not booked seats */
+    cursor: default;
+    border: none; /* No green border for booked seats */
+}
+
+.disableSeat {
+    cursor: default;
+    color: #545454;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px 11px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 11%), 0 2px 4px 0 rgb(0 0 0 / 14%);
+}
+
+.seatSelected {
+    color: #fff !important;
+    background: rgb(53 212 6);
+    border: 0.8px solid #52c41a; /* Green border for not booked seats */
+    border: none; /* No green border for selected seats */
+}
+
+.paymentButton {
+    background: #f84464 !important;
+}
+
+.paymentButtonContainer {
+    position: sticky;
+    bottom: 10px;
+}
+
+.cont_screen {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    margin-bottom: 30px;
+
+    .screen {
+        transform: rotateX(-50deg);
+        box-shadow: 0 3px 10px rgba(3, 198, 252, 0.75);
+        text-align: center;
+        background: linear-gradient(45deg, #03c6fc, #1047c7);
+        height: 8rem;
+        width: 90%;
+        border-radius: 0 0 100% 100% / 120px;
+    }
+
+    .screen_text {
+        color: white; /* Choose color that suits your design */
+        font-size: 2rem; /* Adjust size as needed */
+        font-weight: bold; /* If you want the text to be bold */
+        transform: rotateX(50deg); /* Counteract the parent rotation if needed */
+        position: relative;
+        z-index: 2; /* Ensure it's above the screen layer */
+        top: 2rem;
+      }
+}
